@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EM START</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0056b3;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.left-section {
+    background-color: #003a8c;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+    height: 80vh;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.form h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d3d3d3;
+}
+
+#continue-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#shopping-btn {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#shopping-btn span {
+    margin-left: 10px;
+}
+
+.right-section {
+    width: 60%;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #003a8c;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+    <div class="container">
+        <div class="left-section">
+            <div class="logo">
+                <img src="logo.png" alt="EM START logo">
+            </div>
+            <div class="form">
+                <h2>QUER EMPREENDER?</h2>
+                <label for="name">NOME:</label>
+                <input type="text" id="name" placeholder="Seu nome">
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email" placeholder="Seu email">
+                <button id="continue-btn">CONTINUAR</button>
+            </div>
+            <button id="shopping-btn">
+                IR AS COMPRAS <span>🛒</span>
+            </button>
+        </div>
+        <div class="right-section">
+            <img src="smiling-man.png" alt="Man smiling" class="hero-image">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">TERMOS DE USO</a>
+            <a href="#">AJUDA</a>
+            <a href="#">REDES SOCIAIS</a>
+            <a href="#">CONTATO</a>
+            <a href="#">POLÍTICA DE PRIVACIDADE</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
