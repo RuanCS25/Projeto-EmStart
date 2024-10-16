@@ -1,0 +1,107 @@
+<html></html>
+ <head>
+  <title>
+   EmStart
+  </title>
+  <link rel="shortcut icon" href="imagens/Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="styleM.css">
+  
+ </head>
+ <body>
+
+  <div class="header">
+   <img alt="Logo" height="50" src="imagens/Logo.png" width="150"/>
+   <nav>
+    <a href="sobreNos.html">
+     SOBRE NÓS
+    </a>
+    <a href="indexebook.html">
+     COMPRAR
+    </a>
+    <a href="indexebooksaibamais.html">
+     E-BOOKS
+    </a>
+    <a href="indexInicio.html">
+     PÁGINA INICIAL
+    </a>
+   </nav>
+   <div class="user-info">
+    <span>
+     SEU NOME
+    </span>
+    <i class="fas fa-user-circle">
+    </i>
+    <i class="fas fa-shopping-cart">
+    </i>
+    <span>
+     1
+    </span>
+   </div>
+  </div>
+  <div class="cart-title">
+   CARRINHO
+  </div>
+  <table class="cart-table">
+   <tr>
+    <th>
+     Produto
+    </th>
+    <th>
+     Quantidade:
+    </th>
+    <th>
+     Valor:
+    </th>
+    <th>
+     Total
+    </th>
+   </tr>
+   <tr>
+    <td>
+     <img alt="Product Image" height="100" src="imagens/LeandroCurso.png" width="100"/>
+     <div>
+      A MAGIA DAS PASSAGENS DE GUARDA COM LEANDRO LO
+     </div>
+    </td>
+    <td>
+     <input class="quantity-input" id="quantity" min="1" onchange="updateTotal()" type="number" value="1"/>
+    </td>
+    <td>
+     R$ <span id="unit-price">78.45</span>
+    </td>
+    <td>
+     R$ <span id="total-price">78.45</span>
+    </td>
+   </tr>
+  </table>
+  <div class="payment-options">
+   <label>
+    <input name="payment" type="radio" value="pix"/>
+    PIX
+   </label>
+   <label>
+    <input name="payment" type="radio" value="card"/>
+    Cartao de débito/crédito
+   </label>
+   <label>
+    <input name="payment" type="radio" value="boleto"/>
+    Boleto
+   </label>
+  </div>
+  <div class="buttons">
+   <button>
+    <a href="finalizarCompra.html">
+    FINALIZAR COMPRA
+    </a>
+</button>
+  </div>
+  <script>
+   function updateTotal() {
+            var quantity = document.getElementById('quantity').value;
+            var unitPrice = parseFloat(document.getElementById('unit-price').innerText);
+            var totalPrice = quantity * unitPrice;
+            document.getElementById('total-price').innerText = totalPrice.toFixed(2);
+        }
+  </script>
+ </body>
+</html>

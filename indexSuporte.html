@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleL.css">
+    <title>Emstart</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body id="luis">
+
+    <div class="header">
+        <div class="logo">
+            <img src="img/levantamento de requisitos.png" />
+        </div>
+        <nav>
+            <a href="sobreNos.html">Sobre nós</a>
+            <a href="indexebook.html">Comprar</a>
+            <a href="indexInicio.html">Página inicial</a>
+        </nav>
+        <div class="user">
+            <span>Seu nome</span>
+            <i class="fas fa-user-circle"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+
+    <main>
+        <h2>Suporte ao cliente</h2>
+    </main>
+    <div class="row">
+        <div class="column1">
+            <img src="img/emstart.png" id="imgcolumn2">
+            <div class="container">
+                <label for="name">NOME:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email" name="email">
+                <div class="form-group">
+                    <label for="telefone">TELEFONE:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" required maxlength="11" onfocus="this.placeholder=''" onblur="this.placeholder='(99) 99999-9999'" oninput="this.value = this.value.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3')" required/>
+                </div>
+                <label for="assunto">ASSUNTO</label>
+                <input type="text" id="assunto" name="assunto">
+
+                <a href="indexInicio.html"><button>ENVIAR</button></a>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+<button id="backToTop" onclick="scrollToTop()">↑ Voltar ao Topo</button>
+<script src="script.js"></script>
+</body>
+</html>
+

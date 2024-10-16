@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmStart</title>
+    <link rel="shortcut icon" href="imagens/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+    :root{
+        --font1: Verdana, Geneva, Tahoma, sans-serif;
+        --fonte2:"Passion One", sans-serif;
+        --fonte3:"Sriracha", cursive;
+    }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            background-color: #0046ad;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+        }
+        .header .logo img {
+            height: 50px;
+        }
+        .header .logo span {
+            font-size: 24px;
+            margin-left: 10px;
+        
+        }
+        .header nav {
+            display: flex;
+            gap: 20px;
+        }
+        .header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .header .user {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+        .header .user span {
+            margin-right: 10px;
+        }
+        .header .user i {
+            font-size: 24px;
+            margin-right: 20px;
+        
+        }
+        .search-bar {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+        }
+        .search-bar input {
+            padding: 5px;
+            font-size: 16px;
+            width: 200px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .servicos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .servico {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+        }
+        .servico img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .servico p {
+            margin: 10px 0;
+        }
+        .servico .title {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .servico .description {
+            font-size: 14px;
+            color: gray;
+        }
+        .servico .price {
+            font-size: 18px;
+            color: #0046ad;
+            font-weight: bold;
+        }
+        .servico .availability {
+            font-size: 14px;
+            color: gray;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            padding: 5px;
+            display: inline-block;
+        }
+
+        h2{
+            text-align: center;
+            font-family: var(--fonte2);
+        }
+
+        p{
+            font-family: var(--fonte2);
+            font-size: 2em;
+        }
+
+        section{
+            font-family: var(--fonte2);
+            font-size: 2em;
+        }
+
+        a:hover{
+            color: #0b438e;
+        }
+
+        main{
+            text-align: center;
+        }
+
+        #backToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #00112b;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-size: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s;
+        display: none; 
+        }
+        
+        </style>
+      <title>
+       EM START
+      </title>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+        </head>
+      <body>
+      <div class="header">
+       <div class="logo">
+       <img alt="Logo" height="50" src="imagens/Logo.png" width="150"/>
+     
+       </div>
+       <nav>
+        <a href="sobreNos.html">
+         SOBRE NÓS
+        </a>
+        <a href="indexservicos.html">
+         COMPRAR
+        </a>
+        <a href="indexebook.html">
+         E-BOOKS
+        </a>
+        <a href="indexInicio.html">
+         PAGINA INICIAL
+        </a>
+       </nav>
+       <div class="user">
+        <span>
+         SEU NOME
+        </span>
+        <i class="fas fa-user-circle">
+        </i>
+    
+        <i class="fas fa-shopping-cart">
+        </i>
+       </div>
+      </div>
+
+      <div>
+      <section id="politica">
+      <h2>Termos de Uso</h2>  
+
+      <p id="texto">
+        
+<div>‎ ‎ ‎ ‎Ao utilizar nossos serviços, você concorda com estes Termos de Uso. Eles regem sua relação com a EmStart, descrevendo as responsabilidades, direitos e limites aplicáveis ao uso de nossa plataforma e serviços. Leia atentamente.</div><br>
+
+ <div>
+    ‎ ‎1. Aceitação dos Termos
+     Ao acessar ou usar os serviços fornecidos pela EmStart, você concorda em seguir e estar vinculado a estes Termos de Uso. Se não concordar com qualquer parte destes termos, você não deve utilizar nossos serviços.
+ </div><br>
+
+ <div>
+    ‎ ‎2. Descrição dos Serviços
+     A EmStart fornece soluções para ajudar pequenas empresas, negócios e prestadores de serviços a crescerem, oferecendo ferramentas de marketing, gestão empresarial, consultoria e outros serviços de suporte. Nossos serviços são projetados para auxiliar no desenvolvimento e otimização de negócios de diferentes setores.
+ </div><br>
+
+ <div>
+    ‎ ‎3. Cadastro e Conta
+     - Elegibilidade: Para utilizar nossos serviços, você deve ser maior de 18 anos e estar legalmente apto a celebrar contratos vinculativos.
+     - Informações de Cadastro: Ao se cadastrar, você concorda em fornecer informações verdadeiras, completas e atualizadas. Você é responsável por manter a confidencialidade de sua conta e senha, bem como por todas as atividades que ocorrem sob sua conta.
+     - Responsabilidade da Conta: Você concorda em notificar imediatamente a EmStart em caso de uso não autorizado de sua conta ou qualquer outra violação de segurança.
+ </div><br>
+
+ <div>
+    ‎ ‎ 4. Uso Permitido dos Serviços
+     - Finalidade Comercial: Nossos serviços destinam-se exclusivamente a fins comerciais e profissionais relacionados ao crescimento de empresas e negócios. É proibido o uso pessoal ou recreativo dos serviços oferecidos pela EmStart.
+     - Condutas Proibidas: Ao utilizar a plataforma, você concorda em não:
+      - Violar qualquer lei aplicável;
+      - Usar os serviços para atividades fraudulentas ou ilegais;
+      - Tentar obter acesso não autorizado aos sistemas da EmStart ou a contas de outros usuários;
+      - Distribuir vírus, malwares ou qualquer código prejudicial;
+      - Realizar atividades que possam comprometer a segurança ou o desempenho da nossa plataforma.
+ </div><br>
+
+ <div>
+    ‎ ‎ 5. Pagamentos e Assinaturas
+     - Planos e Preços: Alguns serviços oferecidos pela EmStart são pagos. Os detalhes sobre preços, planos e condições de pagamento estão descritos na página de preços da plataforma.
+     - Pagamentos: Você concorda em pagar todas as taxas associadas ao uso de nossos serviços, conforme os planos selecionados. Os pagamentos podem ser processados por meio de parceiros financeiros confiáveis, e todas as transações estão sujeitas à aceitação dos termos dessas instituições financeiras.
+     - Cancelamento e Reembolso: O cancelamento dos serviços deve ser solicitado de acordo com as condições descritas em nossa política de cancelamento. Reembolsos, quando aplicáveis, serão feitos conforme especificado na política de cada plano.
+ </div><br>
+
+ <div><br>
+    ‎ ‎ 6. Propriedade Intelectual
+     Todo o conteúdo disponível na plataforma EmStart, incluindo, mas não limitado a, textos, gráficos, logos, ícones, imagens, vídeos, software e documentos, é de propriedade exclusiva da EmStart ou de seus licenciadores, sendo protegido por leis de direitos autorais e propriedade intelectual. É proibido copiar, modificar, distribuir ou reproduzir qualquer conteúdo sem autorização prévia por escrito.
+ </div><br>
+
+ <div>
+    ‎ ‎7. Isenção de Garantias
+     Os serviços da EmStart são fornecidos "no estado em que se encontram" e "conforme disponíveis". Embora nos esforcemos para oferecer serviços de alta qualidade, não garantimos que eles estarão livres de erros, interrupções ou que atenderão às suas expectativas específicas. A EmStart se isenta de quaisquer garantias implícitas, incluindo garantias de comercialização, adequação a uma finalidade específica e não infração.
+ </div><br>
+
+ <div>
+    ‎ ‎ 8. Limitação de Responsabilidade
+     Em nenhuma circunstância a EmStart será responsável por danos diretos, indiretos, incidentais, especiais ou consequenciais, incluindo perda de lucros, perda de dados ou interrupção de negócios decorrentes do uso ou da incapacidade de usar nossos serviços, mesmo que a EmStart tenha sido avisada da possibilidade desses danos.
+ </div><br>
+
+ <div>
+    ‎ ‎ 9. Modificações nos Serviços e Termos
+     A EmStart se reserva o direito de modificar ou descontinuar os serviços a qualquer momento, com ou sem aviso prévio. Também podemos atualizar estes Termos de Uso periodicamente. As mudanças entrarão em vigor a partir da data de sua publicação. É sua responsabilidade revisar os Termos de Uso regularmente.
+ </div><br>
+
+ <div>
+    ‎ ‎ 10. Rescisão
+     A EmStart pode suspender ou encerrar sua conta e acesso aos serviços, a seu exclusivo critério, caso você viole estes Termos de Uso ou qualquer lei aplicável. Após a rescisão, todas as licenças e direitos concedidos sob estes Termos serão imediatamente encerrados.
+ </div><br>
+
+ <div>
+    ‎ ‎11. Links para Terceiros
+     Nosso site ou plataforma pode conter links para sites ou serviços de terceiros. Esses links são fornecidos para sua conveniência, mas a EmStart não endossa nem assume responsabilidade pelo conteúdo, produtos ou serviços oferecidos por terceiros.
+ </div><br>
+
+ <div>
+    ‎ ‎12. Legislação Aplicável e Resolução de Disputas
+     Estes Termos de Uso são regidos pelas leis do [País/Estado]. Qualquer disputa relacionada ao uso dos serviços da EmStart será resolvida de acordo com as leis locais e submetida à jurisdição exclusiva dos tribunais competentes do [País/Estado].
+ </div><br>
+
+ <div>
+    ‎ ‎13. Contato
+     Para dúvidas ou questões relacionadas a estes Termos de Uso, entre em contato com nossa equipe através dos seguintes meios:
+ </div><br>
+
+<div>‎ ‎ ‎ ‎EmStart  </div><br>
+<div>‎ ‎ ‎ ‎E-mail: [EmStart@email.com] </div> <br>
+<div>‎ ‎ ‎ ‎Telefone: [(14) 99226-2405]</div><br>
+
+<div>‎ ‎ ‎ ‎Estes Termos de Uso foram elaborados para garantir uma experiência segura e transparente para todos os nossos usuários. Agradecemos por escolher a EmStart para apoiar o crescimento do seu negócio!</div><br>
+            </p>
+        </section>
+    </div>
+
+    <main id="fechar">
+        <strong><a href="politica.html">POLITICA DE PRIVACIDADE</a></strong>
+        <button id="backToTop" onclick="scrollToTop()">↑ Voltar ao Topo</button>
+    </main>
+
+    <script>
+        function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    
+    
+    window.onscroll = function() {
+    const button = document.getElementById('backToTop');
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        button.style.display = 'block';
+    } else {
+        button.style.display = 'none';
+    }
+    };
+    </script>
+
+</body>
+</html>
